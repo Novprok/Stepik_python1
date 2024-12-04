@@ -939,13 +939,43 @@ from math import log, sqrt
 #     num = num - 1
 # print (x)
 
-num = 123456789
-total = 0
+# num = 123456789
+# total = 0
+# while num != 0:
+#     last_digit = num % 10
+#     if last_digit > 4:
+#         total += 1
+
+#     num = num // 10
+
+# print(total)
+
+# Дано натуральное число. 
+# Напишите программу, которая выводит его цифры в столбик в обратном порядке.
+# num = int(input())
+# while num != 0:
+#     print (num % 10)
+#     num = num // 10
+
+# Дано натуральное число. Напишите программу, которая меняет порядок цифр числа на обратный.
+# num = int(input())
+# while num != 0:
+#     print (num % 10, end="")
+#     num = num // 10
+
+# Дано натуральное число n(n≥10). Напишите программу, которая определяет его максимальную и минимальную цифры и выводит текст
+num = int(input())
+max1 = 9
+min1 = 0
 while num != 0:
-    last_digit = num % 10
-    if last_digit > 4:
-        total += 1
-
+    x = num % 10
+    if x <= max1:
+        max1 = x
+    if x >= min1:
+        min1 = x
     num = num // 10
+    
+print ("Максимальная цифра равна", min1)
+print ("Минимальная цифра равна", max1)
 
-print(total)
+
